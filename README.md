@@ -1,5 +1,5 @@
 ### async-orm
-Async orm for async web framework, you should use Django to manage your database(ddl etc).
+Async ORM for async web framework based on Django ORM, use this under Django project and you should use Django to manage your database(ddl etc).
 ```
 pip install -U async-orm
 ```
@@ -24,7 +24,7 @@ class FooBar(BaseModel):
         app_label = 'test'
         verbose_name = "foo_bar"
         verbose_name_plural = "foo_bar"
-        ordering = ['key', '-title']
+        ordering = ['game', '-title']
 
 
 async def test_foo_bar():
